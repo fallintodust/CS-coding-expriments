@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run demo (show_sorts)",
+            "type": "shell",
+            "command": "make run_show_sorts",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run bench5000",
+            "type": "shell",
+            "command": "make bench5000",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run bench65536 (LD_PRELOAD)",
+            "type": "shell",
+            "command": "make bench65536 && make clock_stub.so && LD_PRELOAD=./clock_stub.so ./bench65536 > bench65536.out 2>&1",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
