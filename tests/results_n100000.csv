@@ -1,0 +1,7 @@
+algo,avg_ms
+bubble,25804.839185
+selection,15468.407314
+insertion,8125.992056
+merge,13.907481
+quick,8.814900
+heap,33.942955

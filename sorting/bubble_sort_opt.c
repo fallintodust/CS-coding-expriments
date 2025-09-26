@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdint.h>
 #include <immintrin.h>  // 用于SIMD优化
 
 // CPU优化版本 - 带循环展开、分支预测优化和提前退出优化
